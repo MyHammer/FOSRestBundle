@@ -65,6 +65,10 @@ abstract class AbstractScalarParam extends AbstractParam
             $constraints = array(
                 new All(array('constraints' => $constraints)),
             );
+
+            if (false === $this->nullable) {
+                $constraints[] = new NotNull();
+            }
         }
 
         return $constraints;
