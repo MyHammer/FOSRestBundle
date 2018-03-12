@@ -14,6 +14,7 @@ namespace FOS\RestBundle\Controller\Annotations;
 use FOS\RestBundle\Validator\Constraints\Regex;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\Constraints\NotBlank;
+use Symfony\Component\Validator\Constraints\NotNull;
 use Symfony\Component\Validator\Constraints\All;
 
 /**
